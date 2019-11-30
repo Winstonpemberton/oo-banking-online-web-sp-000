@@ -22,7 +22,7 @@ class Transfer
     elsif @status = "pending" && sender.balance < @amount
       binding.pry
       @status = "rejected"
-      "Transaction rejected. Please check your account balance"
+      return "Transaction rejected. Please check your account balance"
     end
   end
 
